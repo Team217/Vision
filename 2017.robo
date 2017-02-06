@@ -1,0 +1,214 @@
+<head><version>2.83.2</version></head>
+<zoom>8</zoom>
+<NetworkTables>
+  <delay>100</delay>
+  <filter_type_index>1</filter_type_index>
+  <hostname>192.168.0.100</hostname>
+  <port>1735</port>
+  <prefix>/SmartDashboard/</prefix>
+  <variables_to_receive>/SmartDashboard/Camera_Type</variables_to_receive>
+  <variables_to_send>COG_X
+COG_Y</variables_to_send>
+  <variable_type_index>0</variable_type_index>
+</NetworkTables>
+<If_Statement>
+  <comparison_1>1</comparison_1>
+  <comparison_2>-1</comparison_2>
+  <comparison_3>-1</comparison_3>
+  <comparison_4>-1</comparison_4>
+  <comparison_5>-1</comparison_5>
+  <comparison_6>-1</comparison_6>
+  <comparison_type_1>4</comparison_type_1>
+  <comparison_type_2>-1</comparison_type_2>
+  <comparison_type_3>-1</comparison_type_3>
+  <comparison_type_4>-1</comparison_type_4>
+  <comparison_type_5>-1</comparison_type_5>
+  <comparison_type_6>-1</comparison_type_6>
+  <has_else>TRUE</has_else>
+  <is_latch>FALSE</is_latch>
+  <join_1>-1</join_1>
+  <join_2>-1</join_2>
+  <join_3>-1</join_3>
+  <join_4>-1</join_4>
+  <join_5>-1</join_5>
+  <value_1>0</value_1>
+  <variable_1>SmartDashboard_Camera_Type</variable_1>
+</If_Statement>
+<Call>
+  <name>Turret</name>
+  <restore_image>0</restore_image>
+  <use_image>Source</use_image>
+</Call>
+<else/>
+<If_Statement>
+  <comparison_1>1</comparison_1>
+  <comparison_2>-1</comparison_2>
+  <comparison_3>-1</comparison_3>
+  <comparison_4>-1</comparison_4>
+  <comparison_5>-1</comparison_5>
+  <comparison_6>-1</comparison_6>
+  <comparison_type_1>4</comparison_type_1>
+  <comparison_type_2>-1</comparison_type_2>
+  <comparison_type_3>-1</comparison_type_3>
+  <comparison_type_4>-1</comparison_type_4>
+  <comparison_type_5>-1</comparison_type_5>
+  <comparison_type_6>-1</comparison_type_6>
+  <has_else>FALSE</has_else>
+  <is_latch>FALSE</is_latch>
+  <join_1>-1</join_1>
+  <join_2>-1</join_2>
+  <join_3>-1</join_3>
+  <join_4>-1</join_4>
+  <join_5>-1</join_5>
+  <value_1>1</value_1>
+  <variable_1>SmartDashboard_Camera_Type</variable_1>
+</If_Statement>
+<Call>
+  <name>Gear</name>
+  <restore_image>0</restore_image>
+  <use_image>Source</use_image>
+</Call>
+<end_if/>
+<end_if/>
+<function>
+<function_name>Gear</function_name>
+<function_always_run>0</function_always_run>
+<Camera_Properties>
+  <camera>Live! Cam Chat HD VF0790</camera>
+  <enable_trigger>FALSE</enable_trigger>
+  <force_settings>FALSE</force_settings>
+  <gamma_value>100</gamma_value>
+  <horizontal_flip>FALSE</horizontal_flip>
+  <hue_value>-66</hue_value>
+  <saturation_value>48</saturation_value>
+  <software_auto_exposure>FALSE</software_auto_exposure>
+  <timeout>5000</timeout>
+  <vertical_flip>FALSE</vertical_flip>
+  <video_bitcount>16</video_bitcount>
+  <video_rate>30</video_rate>
+  <video_size>320 x 240</video_size>
+  <wait_for_image>TRUE</wait_for_image>
+  <whitebalance_value>4030</whitebalance_value>
+</Camera_Properties>
+<RGB_Filter>
+  <channel>2</channel>
+  <hue_value>40</hue_value>
+  <hysteresis>0</hysteresis>
+  <min_value>100</min_value>
+</RGB_Filter>
+<Blob_Size>
+  <limit>2</limit>
+  <mask>FALSE</mask>
+  <max_area>0</max_area>
+  <min_area>200</min_area>
+  <threshold>5</threshold>
+  <treat_as_color_image>FALSE</treat_as_color_image>
+</Blob_Size>
+<Center_of_Gravity>
+  <box_size>9</box_size>
+  <color_index>2</color_index>
+  <connect_line>FALSE</connect_line>
+  <density>-1</density>
+  <display_as_annotation>FALSE</display_as_annotation>
+  <overlay_image>Current</overlay_image>
+  <show_box>TRUE</show_box>
+  <show_cog>TRUE</show_cog>
+  <show_coord>TRUE</show_coord>
+  <size_index>5</size_index>
+  <threshold>-1</threshold>
+  <use_subpixel>FALSE</use_subpixel>
+</Center_of_Gravity>
+<Display_Variables>
+  <border_color>red</border_color>
+  <dim_background>TRUE</dim_background>
+  <display_as_annotation>FALSE</display_as_annotation>
+  <display_value_only>FALSE</display_value_only>
+  <font_color>white</font_color>
+  <font_size>Normal (10pt)</font_size>
+  <northwest>COG_AREA
+COG_Y
+COG_X
+</northwest>
+</Display_Variables>
+<NetworkTables>
+  <delay>100</delay>
+  <filter_type_index>1</filter_type_index>
+  <hostname>192.168.0.100</hostname>
+  <port>1735</port>
+  <prefix>/SmartDashboard/</prefix>
+  <variables_to_receive>/SmartDashboard/Camera_Type</variables_to_receive>
+  <variables_to_send>COG_X
+COG_Y</variables_to_send>
+  <variable_type_index>0</variable_type_index>
+</NetworkTables>
+</function>
+<function>
+<function_name>Turret</function_name>
+<function_always_run>0</function_always_run>
+<Camera_Properties>
+  <camera>Live! Cam Sync HD VF0770</camera>
+  <enable_trigger>FALSE</enable_trigger>
+  <exposure_value>auto</exposure_value>
+  <force_settings>FALSE</force_settings>
+  <gamma_value>100</gamma_value>
+  <horizontal_flip>FALSE</horizontal_flip>
+  <saturation_value>55</saturation_value>
+  <sharp_value>2</sharp_value>
+  <software_auto_exposure>FALSE</software_auto_exposure>
+  <timeout>5000</timeout>
+  <vertical_flip>FALSE</vertical_flip>
+  <video_bitcount>24</video_bitcount>
+  <wait_for_image>TRUE</wait_for_image>
+  <whitebalance_value>auto</whitebalance_value>
+</Camera_Properties>
+<RGB_Filter>
+  <channel>2</channel>
+  <hue_value>40</hue_value>
+  <hysteresis>0</hysteresis>
+  <min_value>100</min_value>
+</RGB_Filter>
+<Blob_Size>
+  <limit>2</limit>
+  <mask>FALSE</mask>
+  <max_area>0</max_area>
+  <min_area>200</min_area>
+  <threshold>5</threshold>
+  <treat_as_color_image>FALSE</treat_as_color_image>
+</Blob_Size>
+<Center_of_Gravity>
+  <box_size>9</box_size>
+  <color_index>2</color_index>
+  <connect_line>FALSE</connect_line>
+  <density>-1</density>
+  <display_as_annotation>FALSE</display_as_annotation>
+  <overlay_image>Current</overlay_image>
+  <show_box>TRUE</show_box>
+  <show_cog>TRUE</show_cog>
+  <show_coord>TRUE</show_coord>
+  <size_index>5</size_index>
+  <threshold>-1</threshold>
+  <use_subpixel>FALSE</use_subpixel>
+</Center_of_Gravity>
+<Display_Variables>
+  <border_color>red</border_color>
+  <dim_background>TRUE</dim_background>
+  <display_as_annotation>FALSE</display_as_annotation>
+  <display_value_only>FALSE</display_value_only>
+  <font_color>white</font_color>
+  <font_size>Normal (10pt)</font_size>
+  <northwest>COG_Y
+COG_X
+COG_AREA
+</northwest>
+</Display_Variables>
+<NetworkTables>
+  <delay>100</delay>
+  <filter_type_index>1</filter_type_index>
+  <hostname>192.168.0.100</hostname>
+  <port>1735</port>
+  <prefix>/SmartDashboard/</prefix>
+  <variables_to_send>COG_X
+COG_Y</variables_to_send>
+  <variable_type_index>0</variable_type_index>
+</NetworkTables>
+</function>
