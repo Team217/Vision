@@ -35,13 +35,13 @@ while(1):
 
     # Use a Bitwise-AND method to super-impose the thresholded HSV (mask) onto the original image (frame)
     # This causes only green things to appear
-    resA = cv2.bitwise_and(frameA, frameA, mask= maskA)
-    resB = cv2.bitwise_and(frameB, frameB, mask= maskB)
+    resA = cv2.bitwise_and(frameA, frameA, maskA= maskA)
+    resB = cv2.bitwise_and(frameB, frameB, maskB= maskB)
 
     # Find contours in 'mask'. Contours are any significant change in color. In the mask, the colors are either
     # green or black, therefore any green will return as a contour.
     (_,cntrA,_) = cv2.findContours(maskA, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
-    (_,cntrB,_) = cv2.findContours(maskA, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    (_,cntrB,_) = cv2.findContours(maskB, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
     # The 'max' function is used to find the largest contour on the 'mask'. If 'max' does not have
     # any values to return, it crashes the program. Therefore, the entirety of the code for processing
